@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.wong.sign.HandwritingBoardView
+        android:orientation="vertical"
+        android:id="@+id/ll_sign_panel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toTopOf="@id/btn_sign_confirm"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+<Button
+    android:text="确定"
+    android:onClick="onConfirmClick"
+    android:id="@+id/btn_sign_confirm"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toLeftOf="@id/btn_redo"
+    app:layout_constraintTop_toBottomOf="@id/ll_sign_panel"/>
+    <Button
+        android:text="重写"
+        android:onClick="redo"
+        android:id="@+id/btn_redo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btn_sign_confirm"
+        app:layout_constraintRight_toLeftOf="@id/btn_undo"
+        app:layout_constraintTop_toBottomOf="@id/ll_sign_panel"/>
+    <Button
+        android:text="撤销"
+        android:onClick="undo"
+        android:id="@+id/btn_undo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btn_redo"
+        app:layout_constraintRight_toLeftOf="@id/btn_sign_cancel"
+        app:layout_constraintTop_toBottomOf="@id/ll_sign_panel"/>
+    <Button
+        android:text="取消"
+        android:onClick="onCancelClick"
+        android:id="@+id/btn_sign_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btn_undo"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_sign_panel"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
