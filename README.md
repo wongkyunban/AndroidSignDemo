@@ -1,5 +1,6 @@
+
 ![演示](https://github.com/wongkyunban/AndroidSignDemo/raw/master/3h1zf-ea0ng.gif)
-<img src="https://github.com/wongkyunban/AndroidSignDemo/raw/master/3h1zf-ea0ng.gif"/>
+
 # Usage
 ## Java Code
 ```java
