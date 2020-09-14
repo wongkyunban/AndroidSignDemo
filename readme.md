@@ -1,4 +1,4 @@
-![演示](https://github.com/wongkyunban/AndroidSignDemo/blob/master/3h1zf-ea0ng.gif)
+![演示](https://github.com/wongkyunban/AndroidSignDemo/3h1zf-ea0ng.gif)
 # Usage
 ## Java Code
 ```java
